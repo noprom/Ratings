@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Players-->
         <scene sceneID="Acs-cd-96m">
             <objects>
                 <tableViewController id="pE1-bz-fUd" sceneMemberID="viewController">
@@ -27,13 +27,13 @@
                             <outlet property="delegate" destination="pE1-bz-fUd" id="F9C-I9-2Z6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="cBp-7K-pxS"/>
+                    <navigationItem key="navigationItem" title="Players" id="cBp-7K-pxS"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EcT-p0-0pK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="923" y="-106"/>
         </scene>
-        <!--Item 2-->
+        <!--Gestures-->
         <scene sceneID="7yk-Jl-ziF">
             <objects>
                 <viewController id="DcH-31-CZT" sceneMemberID="viewController">
@@ -51,7 +51,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Rdv-QF-Xic"/>
+                    <tabBarItem key="tabBarItem" title="Gestures" image="Gestures" id="Rdv-QF-Xic"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JHQ-6O-iyc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,11 +76,11 @@
             </objects>
             <point key="canvasLocation" x="-155" y="233"/>
         </scene>
-        <!--Item-->
+        <!--Players-->
         <scene sceneID="JWl-6j-KWU">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="neB-Wc-Bn2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="aRS-Q9-jMe"/>
+                    <tabBarItem key="tabBarItem" title="Players" image="Players" id="aRS-Q9-jMe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="h8K-9f-0mM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -96,6 +96,10 @@
             <point key="canvasLocation" x="391" y="-106"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Gestures" width="30" height="30"/>
+        <image name="Players" width="30" height="30"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
