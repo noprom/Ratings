@@ -15,6 +15,7 @@
 		802E503F1B85DE3200CD6BEA /* RatingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802E503E1B85DE3200CD6BEA /* RatingsTests.swift */; };
 		802E507A1B85EDE500CD6BEA /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802E50791B85EDE500CD6BEA /* PlayersViewController.swift */; };
 		802E507C1B85EE5700CD6BEA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802E507B1B85EE5700CD6BEA /* Player.swift */; };
+		802E507E1B85EF4D00CD6BEA /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802E507D1B85EF4D00CD6BEA /* SampleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		802E503E1B85DE3200CD6BEA /* RatingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsTests.swift; sourceTree = "<group>"; };
 		802E50791B85EDE500CD6BEA /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 		802E507B1B85EE5700CD6BEA /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		802E507D1B85EF4D00CD6BEA /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				802E502A1B85DE3100CD6BEA /* ViewController.swift */,
 				802E502C1B85DE3100CD6BEA /* Main.storyboard */,
 				802E507B1B85EE5700CD6BEA /* Player.swift */,
+				802E507D1B85EF4D00CD6BEA /* SampleData.swift */,
 				802E50791B85EDE500CD6BEA /* PlayersViewController.swift */,
 				802E502F1B85DE3100CD6BEA /* Images.xcassets */,
 				802E50311B85DE3100CD6BEA /* LaunchScreen.xib */,
@@ -221,6 +224,7 @@
 				802E507C1B85EE5700CD6BEA /* Player.swift in Sources */,
 				802E502B1B85DE3100CD6BEA /* ViewController.swift in Sources */,
 				802E50291B85DE3100CD6BEA /* AppDelegate.swift in Sources */,
+				802E507E1B85EF4D00CD6BEA /* SampleData.swift in Sources */,
 				802E507A1B85EDE500CD6BEA /* PlayersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

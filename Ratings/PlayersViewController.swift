@@ -10,6 +10,9 @@ import UIKit
 
 class PlayersViewController: UITableViewController {
 
+    // 玩家
+    var players:[Player] = playersData
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,26 +31,24 @@ class PlayersViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        return 0
+        return players.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("PlayerCell", forIndexPath: indexPath) as! UITableViewCell
 
-        // Configure the cell...
-
+        let player = players[indexPath.row] as Player
+        cell.textLabel?.text = player.name
+        cell.detailTextLabel?.text = player.game
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
