@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		801BEBA01B88A35000D4252C /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801BEB9F1B88A35000D4252C /* PlayerDetailsViewController.swift */; };
+		801BEBA21B89560800D4252C /* GamePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801BEBA11B89560800D4252C /* GamePickerViewController.swift */; };
 		802E50291B85DE3100CD6BEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802E50281B85DE3100CD6BEA /* AppDelegate.swift */; };
 		802E502B1B85DE3100CD6BEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802E502A1B85DE3100CD6BEA /* ViewController.swift */; };
 		802E502E1B85DE3100CD6BEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 802E502C1B85DE3100CD6BEA /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		801BEB9F1B88A35000D4252C /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewController.swift; sourceTree = "<group>"; };
+		801BEBA11B89560800D4252C /* GamePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePickerViewController.swift; sourceTree = "<group>"; };
 		802E50231B85DE3100CD6BEA /* Ratings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ratings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		802E50271B85DE3100CD6BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		802E50281B85DE3100CD6BEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				802E507D1B85EF4D00CD6BEA /* SampleData.swift */,
 				802E50791B85EDE500CD6BEA /* PlayersViewController.swift */,
 				801BEB9F1B88A35000D4252C /* PlayerDetailsViewController.swift */,
+				801BEBA11B89560800D4252C /* GamePickerViewController.swift */,
 				802E502F1B85DE3100CD6BEA /* Images.xcassets */,
 				802E50311B85DE3100CD6BEA /* LaunchScreen.xib */,
 				802E50261B85DE3100CD6BEA /* Supporting Files */,
@@ -227,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				801BEBA21B89560800D4252C /* GamePickerViewController.swift in Sources */,
 				802E50801B85F77800CD6BEA /* PlayerCell.swift in Sources */,
 				802E507C1B85EE5700CD6BEA /* Player.swift in Sources */,
 				802E502B1B85DE3100CD6BEA /* ViewController.swift in Sources */,
