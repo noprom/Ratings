@@ -69,7 +69,7 @@ class PlayersViewController: UITableViewController {
     @IBAction func savePlayerDetail(segue: UIStoryboardSegue){
         if let playerDetailsController = segue.sourceViewController as? PlayerDetailsViewController {
             //add the new player to the players array
-            players.append(playerDetailsController.player)
+            players.append(playerDetailsController.player!)
             // update the tableview
             let indexPath = NSIndexPath(forRow: players.count - 1 , inSection: 0)
             tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)

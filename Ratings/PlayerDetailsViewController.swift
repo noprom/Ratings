@@ -10,7 +10,7 @@ import UIKit
 
 class PlayerDetailsViewController: UITableViewController {
    
-    var player: Player!
+    var player: Player?
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var detailLabel: UILabel!
     
@@ -36,8 +36,8 @@ class PlayerDetailsViewController: UITableViewController {
     :param: sender <#sender description#>
     */
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if sender?.identifier == "SavePlayerDetail" {
-            player = Player(name: self.nameTextField, game: "Chess", rating: 1)
+        if segue.identifier == "SavePlayerDetail" {
+            player = Player(name: self.nameTextField.text, game: "Chess", rating: 1)
         }
     }
     
