@@ -11,11 +11,13 @@ import UIKit
 class PlayerDetailsViewController: UITableViewController {
    
     var player: Player?
+    var game:String = "Chess"
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var detailLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        detailLabel.text = game
     }
     
     override func didReceiveMemoryWarning() {
@@ -37,6 +39,14 @@ class PlayerDetailsViewController: UITableViewController {
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         if indexPath.section == 0 {
             nameTextField.becomeFirstResponder()
+        }
+    }
+    
+    @IBAction func selectedGame(segue:UIStoryboardSegue) {
+        if let gamePickerViewController = segue.sourceViewController as? GamePickerViewController,
+            selectedGame = gamePickerViewController.selectedGame {
+                detailLabel.text = selectedGame
+                game = selectedGame
         }
     }
 }
