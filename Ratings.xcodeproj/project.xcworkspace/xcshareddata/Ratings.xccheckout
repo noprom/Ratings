@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>EA25245C-047A-481D-B683-F511FEC3196D</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Ratings</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>494FAFF5345A8283C593F4288050255A5278645E</key>
 		<string>github.com:noprom/Ratings.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Ratings.xcodeproj/project.xcworkspace</string>
+	<string>Ratings.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>494FAFF5345A8283C593F4288050255A5278645E</key>

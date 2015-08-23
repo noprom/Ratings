@@ -27,9 +27,51 @@ class PlayersViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    /**
+    排名对应的图片
+    
+    :param: rating <#rating description#>
+    
+    :returns: <#return value description#>
+    */
+    func imageForRating(rating: Int) -> UIImage?{
+        switch(rating){
+            case 1:
+                return UIImage(named: "1StarSmall")
+            case 2:
+                return UIImage(named: "2StarsSmall")
+            case 3:
+                return UIImage(named: "3StarsSmall")
+            case 4:
+                return UIImage(named: "4StarsSmall")
+            case 5:
+                return UIImage(named: "5StarsSmall")
+            default:
+                return nil
+        }
+    }
+    
+    /**
+    从PlayerDetailsViewController 取消
+    
+    :param: segue <#segue description#>
+    */
+    @IBAction func cancelToPlayersViewController(segue: UIStoryboardSegue){
+        print("从PlayerDetailsViewController 取消")
+    }
+    
+    /**
+    从PlayerDetailsViewController 保存
+    
+    :param: segue <#segue description#>
+    */
+    @IBAction func savePlayerDetail(segue: UIStoryboardSegue){
+        print("从PlayerDetailsViewController 保存")
+    }
+        
     // MARK: - Table view data source
-
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -40,14 +82,35 @@ class PlayersViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("PlayerCell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("PlayerCell", forIndexPath: indexPath) as! PlayerCell
 
         let player = players[indexPath.row] as Player
-        cell.textLabel?.text = player.name
-        cell.detailTextLabel?.text = player.game
         
+        // 使用原生的控件
+//        cell.textLabel?.text = player.name
+//        cell.detailTextLabel?.text = player.game
+        
+        // 使用tag来查找view
+//        // 姓名
+//        if let nameLabel = cell.viewWithTag(100) as? UILabel{
+//            nameLabel.text = player.name
+//        }
+//        // 游戏
+//        if let gameLabel = cell.viewWithTag(101) as? UILabel{
+//            gameLabel.text = player.game
+//        }
+//        // 排名图片
+//        if let ratingImageView = cell.viewWithTag(102) as? UIImageView{
+//            ratingImageView.image = self.imageForRating(player.rating)
+//        }
+        // 自定义类
+        
+        cell.nameLabel.text = player.name
+        cell.gameLabel.text = player.game
+        cell.ratingImageView.image = self.imageForRating(player.rating)
         return cell
     }
+    
     
 
     /*
