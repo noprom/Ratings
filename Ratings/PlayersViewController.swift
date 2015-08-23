@@ -67,7 +67,13 @@ class PlayersViewController: UITableViewController {
     :param: segue <#segue description#>
     */
     @IBAction func savePlayerDetail(segue: UIStoryboardSegue){
-        print("从PlayerDetailsViewController 保存")
+        if let playerDetailsController = segue.sourceViewController as? PlayerDetailsViewController {
+            //add the new player to the players array
+            players.append(playerDetailsController.player)
+            // update the tableview
+            let indexPath = NSIndexPath(forRow: players.count - 1 , inSection: 0)
+            tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+        }
     }
         
     // MARK: - Table view data source

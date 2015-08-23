@@ -94,10 +94,10 @@
 				802E507B1B85EE5700CD6BEA /* Player.swift */,
 				802E507D1B85EF4D00CD6BEA /* SampleData.swift */,
 				802E50791B85EDE500CD6BEA /* PlayersViewController.swift */,
+				801BEB9F1B88A35000D4252C /* PlayerDetailsViewController.swift */,
 				802E502F1B85DE3100CD6BEA /* Images.xcassets */,
 				802E50311B85DE3100CD6BEA /* LaunchScreen.xib */,
 				802E50261B85DE3100CD6BEA /* Supporting Files */,
-				801BEB9F1B88A35000D4252C /* PlayerDetailsViewController.swift */,
 			);
 			path = Ratings;
 			sourceTree = "<group>";

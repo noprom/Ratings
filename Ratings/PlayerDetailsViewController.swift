@@ -10,8 +10,8 @@ import UIKit
 
 class PlayerDetailsViewController: UITableViewController {
    
+    var player: Player!
     @IBOutlet var nameTextField: UITextField!
-    
     @IBOutlet var detailLabel: UILabel!
     
     override func viewDidLoad() {
@@ -27,6 +27,18 @@ class PlayerDetailsViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    /**
+    保存所填的name
+    
+    :param: segue  <#segue description#>
+    :param: sender <#sender description#>
+    */
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if sender?.identifier == "SavePlayerDetail" {
+            player = Player(name: self.nameTextField, game: "Chess", rating: 1)
+        }
     }
     
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {

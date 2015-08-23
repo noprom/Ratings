@@ -99,7 +99,7 @@
                         <sections>
                             <tableViewSection headerTitle="Player Name" id="BBN-Ha-btn" userLabel="Player Name">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="tGF-y4-ngg">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="tGF-y4-ngg">
                                         <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tGF-y4-ngg" id="PGW-54-5D7">
@@ -152,12 +152,12 @@
                     <navigationItem key="navigationItem" title="Add Player" id="tk4-C1-pEh">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="dBh-U4-OMZ" userLabel="Cancel">
                             <connections>
-                                <segue destination="Sen-MG-ZfC" kind="unwind" unwindAction="cancelToPlayersViewController:" id="3HX-P9-0nW"/>
+                                <segue destination="Sen-MG-ZfC" kind="unwind" unwindAction="cancelToPlayersViewController:" id="EQL-Pv-HJO"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Done" id="hsa-jd-pfs" userLabel="Done">
                             <connections>
-                                <segue destination="Sen-MG-ZfC" kind="unwind" unwindAction="savePlayerDetail:" id="yKS-6R-3lI"/>
+                                <segue destination="Sen-MG-ZfC" kind="unwind" identifier="SavePlayerDetail" unwindAction="savePlayerDetail:" id="yKS-6R-3lI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
